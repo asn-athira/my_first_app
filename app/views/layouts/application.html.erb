@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My_First_App</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <!--<%= link_to 'home', root_path %>
+    <%= link_to 'about', about_path %>
+
+    <%= link_to 'new course', courses_new_path %>
+        <%= link_to 'contact', contact_path %>-->
+  <header>
+    <ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+  <nav>
+    <div class="container">
+    <div class="nav-wrapper">
+
+      <a href="" class="brand-logo right">Tech University</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'About', about_path %></li>
+        <li><%= link_to 'New course', courses_new_path %></li>
+        <li><%= link_to 'Contact', contact_path %></li>
+        <li>Enrollment</li>
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a></li>
+
+      </ul>
+    </div>
+  </div>
+  </nav>
+  </header>
+
+  <main>
+    <div class="container">
+    <%= yield %>
+  </div>
+  </main>
+
+           <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Tech University</h5>
+                <p class="grey-text text-lighten-4">The future of development training !</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Information</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Help</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2020 Copyright Text
+            </div>
+          </div>
+        </footer>
+        
+  </body>
+</html>
