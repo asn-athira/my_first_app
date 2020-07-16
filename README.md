@@ -26,3 +26,4 @@ Things you may want to cover:
 # my_first_app
 # my_first_app
 # first_aplication
+# my_first_app
