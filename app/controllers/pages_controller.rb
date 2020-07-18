@@ -1,16 +1,20 @@
-class PagesController < ApplicationController
- 
- def about
- 	
- end
- def contact
+	class PagesController < ApplicationController
+	 	layout "pages"
 
- end
- def courses
+	 def about
+	 	
+	 end
+	 def contact
 
- end
- def gallery
- 	
- end
- 
- end
+	 end
+	 def courses
+
+	 end
+	 def gallery
+	 	
+	 end
+	 def new
+	 	
+	 end
+	 
+	 end

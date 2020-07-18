@@ -5,5 +5,7 @@ Rails.application.routes.draw do
  get 'contact' , to:'pages#contact'
   get 'courses' , to:'pages#courses'
   get 'gallery' , to:'pages#gallery'
+  get 'new' , to:'pages#new'
+
 
 end
