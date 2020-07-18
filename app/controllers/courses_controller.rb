@@ -1,5 +1,5 @@
 class CoursesController < ApplicationController
- 
+	layout "default"
  def index
 
  	
