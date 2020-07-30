@@ -1,0 +1,28 @@
+<div class="container">
+
+<h1>Books</h1>
+
+<div class="row">
+  <% @books.each do |book| %>
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title"><%=book.book_name%></span>
+          <ul>
+  <li>Description :  <%=book.book_desc%></li>
+
+</ul>  
+
+        </div>
+        <div class="card-action">
+
+
+
+        </div>
+      </div>
+    </div>
+    
+     <% end %>
+   
+  </div>
+</div>

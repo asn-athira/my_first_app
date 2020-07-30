@@ -1,0 +1,20 @@
+
+
+<div class="container">
+
+<h1>Create Books</h1>
+
+
+  <div class="row">
+<%= form_for @book do |f| %>
+<%#= form_with scope: :courses, url: courses_path, local: true do |f| %>
+
+<%= f.label :Book_name %>
+<%= f.text_field :book_name %>
+
+<%= f.label :Description %>
+<%= f.text_field :book_desc %>
+
+<%= f.submit "submit" %>
+
+ <% end %>

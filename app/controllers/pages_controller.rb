@@ -7,14 +7,16 @@
 	 def contact
 
 	 end
-	 def courses
+	 def course_names
+      @courses=Course.all
 
 	 end
 	 def gallery
 	 	
 	 end
 	 def new
-	 	
 	 end
+	
+
 	 
 	 end

@@ -7,15 +7,15 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
      
+    <%= stylesheet_link_tag 'style.css', media: 'all', 'data-turbolinks-track': 'reload' %>
 
  
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body bgcolor="#FAEBD7">
-   
-        <%= render partial: 'layouts/default/header' %>
-        <%= image_tag "banner1.jpg", alt: "user-img", style: "height: 400px; width: 1285px" %>
+  <body bgcolor="#00CED1">
+    
+        <%= render partial: 'layouts/courses/header' %>
+    <%= image_tag "banner.jpg", alt: "user-img", style: "height: 200px; width: 1285px" , class: "responsive"%>
 
 
   <main>
@@ -23,7 +23,7 @@
     <%= yield %>
   </main>
 
-          <%= render partial: 'layouts/default/footer' %>
+          <%= render partial: 'layouts/courses/footer' %>
 
   </body>
 </html>

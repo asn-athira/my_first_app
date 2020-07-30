@@ -1,6 +1,7 @@
+
 <div class="container">
 
-<h1>Course Listing</h1>
+
 
 <div class="row">
   <% @courses.each do |course| %>
@@ -9,20 +10,13 @@
         <div class="card-content white-text">
           <span class="card-title"><%=course.name%></span>
           <ul>
-              <li>Description :  <%=course.description%></li>
+  <li>Description :  <%=course.description%></li>
 
-          </ul>  
-
+</ul>         
         </div>
         <div class="card-action">
-               <%= link_to 'Add New' ,new_course_path %>
-
-        	  <%= link_to 'Edit' ,edit_course_path(course), method: :edit  %>
-
-             <%= link_to 'Delete' ,course_path(course), method: :delete  %>
-             <%= link_to 'Books' ,courses_show_path(course), method: :show  %>
-
-
+          <a href="#">Info</a>
+          <a href="#"></a>
         </div>
       </div>
     </div>
