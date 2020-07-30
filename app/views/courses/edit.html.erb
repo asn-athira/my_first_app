@@ -2,11 +2,11 @@
 
 <div class="container">
 
-<h1>Create Courses</h1>
+<h1>Edit courses</h1>
 
 
   <div class="row">
-<%= form_for @course do |f| %>
+<%= form_with(model: @course, local: true) do |f| %>
 <%#= form_with scope: :courses, url: courses_path, local: true do |f| %>
 
 <%= f.label :Course_name %>
@@ -15,6 +15,6 @@
 <%= f.label :Description %>
 <%= f.text_field :description %>
 
-<%= f.submit "submit" %>
+<%= f.submit "Update" %>
 
  <% end %>

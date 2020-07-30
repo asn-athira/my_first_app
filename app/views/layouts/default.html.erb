@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My_First_App</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     
+
+ 
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body bgcolor="#FAEBD7">
+   
+        <%= render partial: 'layouts/default/header' %>
+        <%= image_tag "banner1.jpg", alt: "user-img", style: "height: 400px; width: 1285px" %>
+
+
+  <main>
+
+    <%= yield %>
+  </main>
+
+          <%= render partial: 'layouts/default/footer' %>
+
+  </body>
+</html>
